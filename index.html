@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#07130d"><title>WARHOUND.OS</title><style>
 :root{font-family:system-ui,Arial,sans-serif;color:#dceadd;background:#07130d}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#193923,#07130d 60%);min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer}header{padding:20px 16px 12px;border-bottom:1px solid #36533a;display:flex;justify-content:space-between;align-items:center}.brand{color:#a7f08e;font-weight:900;letter-spacing:2px}.sub{font-size:10px;letter-spacing:2px;color:#799b7c}.badge{font-size:10px;color:#9df28d;border:1px solid #437b46;border-radius:30px;padding:6px 9px}main{max-width:700px;margin:auto;padding:18px 14px 110px}h1{font-size:21px;letter-spacing:2px;margin:5px 0}h2{font-size:16px;color:#a8f395;letter-spacing:1px}p{line-height:1.55}.muted{color:#91a897;font-size:13px}.panel{background:#102218;border:1px solid #33533b;border-radius:13px;padding:16px;margin-bottom:14px;box-shadow:0 8px 22px #0003}.line{display:flex;align-items:center;justify-content:space-between;gap:10px}.btn{background:#203b27;color:#c9f6bd;border:1px solid #497f4e;border-radius:9px;padding:11px 12px}.btn:active{background:#3b6941}.btn.primary{background:#8bd878;color:#07130d;font-weight:800}.small{font-size:12px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.tile{padding:15px;text-align:left;min-height:100px;background:#132a1b;border:1px solid #33583d;border-radius:12px;color:#d9f1d7}.tile b{display:block;color:#a5f291;font-size:12px;letter-spacing:1px;margin:10px 0 5px}.tile span{font-size:11px;color:#91ad96}nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-around;background:#09180f;border-top:1px solid #39573d;padding:8px 0 max(9px,env(safe-area-inset-bottom));z-index:10}nav button{background:none;border:0;color:#8db294;font-size:10px;min-width:57px;padding:5px}nav button.active{color:#a9f68d}nav button strong{display:block;font-size:19px;margin-bottom:3px}.chat{height:350px;overflow:auto;padding:10px;background:#0a1910;border:1px solid #2e4933;border-radius:10px}.bubble{max-width:88%;padding:10px 12px;border-radius:11px;margin:9px 0;line-height:1.45;font-size:14px;white-space:pre-wrap}.kh{background:#213d29;border-left:3px solid #9beb83}.sp{background:#263b40;border-right:3px solid #78d7c6;margin-left:auto}.who{font-size:10px;letter-spacing:1px;opacity:.7;margin-bottom:4px}.compose{display:flex;gap:7px;margin-top:9px}.compose input{flex:1;min-width:0;background:#0c1d12;color:white;border:1px solid #426246;border-radius:9px;padding:12px}.choice{width:100%;text-align:left;margin:5px 0}.pill{display:inline-block;border:1px solid #50754e;border-radius:30px;padding:5px 9px;color:#a6e6a0;font-size:11px;margin:3px}.hidden{display:none}.stat{font-size:25px;font-weight:900;color:#b4f49e}.progress{height:9px;background:#27412c;border-radius:20px;overflow:hidden}.progress div{height:100%;background:#9cdd87}textarea{width:100%;background:#0a1910;color:#e0f2dc;border:1px solid #45634a;border-radius:8px;padding:12px;min-height:90px}.room{padding:13px;border-bottom:1px solid #2f4e36}.room:last-child{border:0}footer{font-size:10px;color:#6e8d74;text-align:center;margin:20px 0} .glow{color:#b1f69b}
-.stack{display:grid;gap:8px}.record{border-top:1px solid #33533b;padding:12px 0}.record p{margin:6px 0}.badge,.sub,.who{font-family:ui-monospace,monospace}.photo{display:block;max-width:100%;max-height:260px;border-radius:8px;margin:12px auto}.bubble,.record,p{overflow-wrap:anywhere}.line{flex-wrap:wrap}.chat{height:clamp(220px,49dvh,510px)}.tile:focus-visible,.btn:focus-visible{outline:2px solid #c5ffae}.choice small{display:block;color:#a8b9ab;margin-top:5px}label{display:block;margin:10px 0}input:not([type=checkbox]),select{background:#0a1910;color:#dcf1db;padding:10px;border:1px solid #45634a;border-radius:8px;max-width:100%}button:disabled{opacity:.55}nav button{min-width:0}h1{overflow-wrap:anywhere}</style></head><body><header><div><div class="brand">▣ WARHOUND.OS</div><div class="sub">BARGHEST // PRIVATE TERMINAL</div></div><div class="badge">● ENCRYPTED</div></header><main id="app" tabindex="-1"></main><nav id="nav"></nav><script>
+.stack{display:grid;gap:8px}.record{border-top:1px solid #33533b;padding:12px 0}.record p{margin:6px 0}.badge,.sub,.who{font-family:ui-monospace,monospace}.photo{display:block;max-width:100%;max-height:260px;border-radius:8px;margin:12px auto}.bubble,.record,p{overflow-wrap:anywhere}.line{flex-wrap:wrap}.chat{height:clamp(220px,49dvh,510px)}.tile:focus-visible,.btn:focus-visible{outline:2px solid #c5ffae}.choice small{display:block;color:#a8b9ab;margin-top:5px}label{display:block;margin:10px 0}input:not([type=checkbox]),select{background:#0a1910;color:#dcf1db;padding:10px;border:1px solid #45634a;border-radius:8px;max-width:100%}button:disabled{opacity:.55}nav button{min-width:0}h1{overflow-wrap:anywhere}.compose{align-items:center}.compose textarea{min-width:0;min-height:48px;resize:vertical}.attach{position:relative;overflow:hidden}.attach input{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}.chat{height:clamp(220px,53dvh,620px)}details{margin-top:12px}.photo{height:auto}.bubble:has(img){white-space:normal}</style></head><body><header><div><div class="brand">▣ WARHOUND.OS</div><div class="sub">BARGHEST // PRIVATE TERMINAL</div></div><div class="badge">● ENCRYPTED</div></header><main id="app" tabindex="-1"></main><nav id="nav"></nav><script>
 // Times are simulation minutes from midnight on day one.
 const shifts = [
   [0, 'Private quarters', true, 'quarters', 'A bedside lamp burns behind the frosted glass.'],
@@ -39,9 +39,6 @@ const clamp = n => Math.max(0,Math.min(100,n));
 function adjust(changes){for(const [k,v] of Object.entries(changes))S[k]=clamp(S[k]+v)}
 function line(from,text,time=now()){S.messages.push({from,text,time})}
 function dispatch(text,time=now()){S.pending.push({kind:'notice',text,due:availableAt(time)})}
-function flush(m){let count=0;while(S.pending.length && S.pending[0].due<=m){
-  const item=S.pending.shift();line('kh',item.kind==='notice'?item.text:answerLine(item.text,item.due),item.due);count++;
-}return count}
 function answerLine(raw,m){
   const s=raw.toLowerCase(),last=S.reports.at(-1), active=operations[S.active], prev=S.thread;
   if(/remember |remind me /.test(s)&&!s.includes('what')){S.memo=raw.replace(/^.*?(?:remember|remind me)\s+/i,'').slice(0,350);return 'I’ve put “'+S.memo+'” in the margin of my shift book.'}
@@ -74,7 +71,7 @@ const KEY='warhound-os-v1', $=id=>document.getElementById(id);
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function readSave(v={}){
   if(!v || typeof v!=='object'||Array.isArray(v)) throw Error('Invalid save');
-  const data={trust:12,rep:0,access:0,affection:10,points:0,orders:0,completed:[],unlocks:[],messages:[{from:'kh',text:'Private line is open. Use it when you need something, Spyder.'}],notes:'',anchor:Date.now(),base:600,pace:4,pending:[],flags:{},room:'office',active:null,reports:[],events:{},journal:[],quick:[],photo:'',thread:'',memo:'',contactDay:-1,...v};
+  const data={trust:12,rep:0,access:0,affection:10,points:0,orders:0,completed:[],unlocks:[],messages:[{from:'kh',text:'I’ve got my phone on me, kid. How’s your day going?'}],notes:'',anchor:Date.now(),base:600,pace:4,pending:[],flags:{},room:'office',active:null,reports:[],events:{},journal:[],quick:[],photo:'',thread:'',memo:'',contactDay:-1,...v};
   for(const k of ['completed','unlocks','messages','pending','reports','journal','quick'])if(!Array.isArray(data[k]))throw Error('Invalid '+k);
   for(const k of ['trust','rep','access','affection','points','orders','anchor','base','pace'])if(!Number.isSafeInteger(data[k])||data[k]<0)throw Error('Invalid '+k);
   for(const k of ['events','flags'])if(!data[k]||typeof data[k]!=='object'||Array.isArray(data[k]))throw Error('Invalid '+k);
@@ -87,8 +84,8 @@ function readSave(v={}){
 let S;try{S=readSave(JSON.parse(localStorage.getItem(KEY))||{})}catch{S=readSave();alert('Could not load the saved terminal. Export any backup before continuing.')}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S));return true}catch{alert('Browser storage is full or unavailable. Export your current save in Settings.');return false}}
 const now=()=>S.base+Math.floor(Math.max(0,Date.now()-S.anchor)/60000*S.pace);
-let tab='home',draft='', lastMinute=-1;
-const tabs=[['home','⌂','HOME'],['comms','▤','COMMS'],['orders','▣','ORDERS'],['sapphire','◇','SAPPHIRE'],['more','☷','MORE']];
+let tab='comms',draft='', lastMinute=-1;
+const tabs=[['home','⌂','HOME'],['comms','▤','TEXTS'],['orders','▣','ORDERS'],['sapphire','◇','SAPPHIRE'],['more','☷','MORE']];
 const title=(sub,name)=>'<div class="sub">'+sub+'</div><h1>'+name+'</h1>';
 const panel=(name,content)=>'<section class="panel"><h2>'+name+'</h2>'+content+'</section>';
 const btn=(label,action,primary=false)=>'<button class="btn '+(primary?'primary':'')+'" onclick="'+action+'">'+label+'</button>';
@@ -104,15 +101,119 @@ function render(){
 function duty(){let m=now(),w=shift(m);return '<div class="sub">DOGTOWN // '+clock(m)+'</div><h2>'+w[1]+'</h2><p>'+w[4]+'</p><p class="muted">'+(w[2]?'Private line open':'Transmissions held until '+clock(availableAt(m)))+'</p>'}
 function waitWatch(){S.base=nextWatch(now());S.anchor=Date.now();flush(now());save();render()}
 function home(){return title('AUTHORIZED USER // SPYDER','WELCOME BACK, PUP.')+'<section class="panel">'+duty()+btn('OPEN PRIVATE COMMS →',"go('comms')",true)+'</section>'+grid([['orders','▣','COLONEL’S ORDERS',operations[S.active]?.name||'Dispatch & after-action reports'],['companion','♡','HANSEN DIRECTIVE','Private requests'],['sapphire','◇','BLACK SAPPHIRE',locations[S.room][0]],['breach','⌘','BREACH PROTOCOL','Decrypt classified intel'],['files','▤','PERSONNEL FILES','Standing & field journal'],['settings','⚙','SYSTEM SETTINGS','Clock, backup & conversation']])}
-function transmit(text){text=text?.trim().slice(0,2000);if(!text)return;const t=now();flush(t);line('sp',text,t);S.pending.push({kind:'chat',text,due:availableAt(t)});draft='';flush(t);save();go('comms')}
-function comms(){return title('CHANNEL 01 // EYES ONLY','COMMAND LINE')+'<p class="muted">'+clock(now())+' · '+shift(now())[1]+' · '+(shift(now())[2]?'Line open':'Next contact '+clock(availableAt(now())))+'</p><div class="chat" id="chat" role="log">'+S.messages.map(m=>'<div class="bubble '+m.from+'"><div class="who">'+(m.from==='kh'?'KURT HANSEN':'SPYDER')+(m.time!=null?' // '+clock(m.time):'')+'</div>'+esc(m.text)+'</div>').join('')+'</div><form class="compose" onsubmit="event.preventDefault();transmit($(\'msg\').value)"><input aria-label="Message to Kurt" id="msg" maxlength="2000" oninput="draft=this.value" placeholder="Transmit a message…"><button class="btn primary">SEND</button></form><p class="muted">'+(S.pending.length?S.pending.length+' queued · ':'')+'Local simulation · '+btn('Next watch','waitWatch()')+'</p>'+S.quick.map((s,i)=>btn(esc(s),'transmit(S.quick['+i+'])')).join(' ')+aiButton()}
+let attachment='', loadingImage=false;
+const imageOK=s=>typeof s==='string' && /^data:image\/jpeg;base64,[a-zA-Z0-9+/=]+$/.test(s);
+async function attach(f){
+  if(!f)return;
+  loadingImage=true;
+  try{
+    const img=await createImageBitmap(f), scale=Math.min(1,1280/Math.max(img.width,img.height)), c=document.createElement('canvas');
+    c.width=Math.max(1,Math.round(img.width*scale));c.height=Math.max(1,Math.round(img.height*scale));
+    c.getContext('2d').drawImage(img,0,0,c.width,c.height);img.close();attachment=c.toDataURL('image/jpeg',0.78);
+  }catch{alert('That picture could not be opened. Try a screenshot or a JPG.')}
+  finally{loadingImage=false;if(tab==='comms')render()}
+}
+function bubble(m){
+  let stamp=Number.isFinite(m.time)?clock(m.time).split(' · ')[1]:'';
+  return '<div class="bubble '+m.from+'"><div class="who">'+(m.from==='kh'?'Kurt':'You')+' · '+stamp+'</div>'+(imageOK(m.image)?'<img class="photo" src="'+m.image+'" alt="Photo you sent Kurt">':'')+esc(m.text)+'</div>';
+}
+function comms(){
+  const busy=!shift(now())[2], waiting=S.pending.some(x=>x.kind==='chat');
+  return '<div class="sub">PRIVATE LINE</div><h1>Kurt Hansen</h1><p class="muted" id="presence">'+presence()+'</p><div class="chat" id="chat" role="log">'+S.messages.map(bubble).join('')+'</div>'+
+    (attachment?'<div class="line"><img style="max-height:76px" src="'+attachment+'" alt="Photo ready to send">'+btn('Remove photo',"attachment=\'\';render()")+'</div>':'')+
+    '<form class="compose" onsubmit="event.preventDefault();transmit(draft)"><label class="btn attach">Photo<input type="file" aria-label="Attach photo or screenshot" accept="image/*" onchange="attach(this.files[0])"></label><textarea id="msg" rows="2" maxlength="6000" oninput="draft=this.value" aria-label="Text Kurt" placeholder="Text Kurt…"></textarea><button class="btn primary">Send</button></form>'+
+    '<p class="muted" id="receipt">'+(waiting?'Delivered · waiting for Kurt':'')+'</p>'+ (busy?btn('Skip to when he’s free','skipBusy()'):'')+
+    '<details><summary class="muted">Conversation settings</summary><p class="muted">'+(modelConfig?'Connected AI · messages and attached pictures go to your chosen provider.':'Offline dialogue · replies use your words and photo captions. Connect a model for open-ended replies and image interpretation.')+'</p>'+btn('Settings',"go('settings')")+'</details>';
+}
+function presence(){const w=shift(now());return w[2]?'Available · '+w[1]:'Busy · '+w[1]+' · He’ll check his phone later.'}
+function skipBusy(){S.base=availableAt(now());S.anchor=Date.now();flush(now());save();render()}
+function transmit(raw){
+  const text=raw?.trim().slice(0,6000)||'';if(loadingImage||(!text&&!attachment))return;
+  const t=now();flush(t);const index=S.messages.length;
+  S.messages.push({from:'sp',text,time:t,...(attachment?{image:attachment}:{})});
+  S.pending.push({kind:'chat',text,index,due:availableAt(t),after:Date.now()+2800,ai:!!modelConfig});
+  if(!save()){S.messages.pop();S.pending.pop();return}
+  S.nextHello=t+480;save();attachment='';draft='';go('comms');
+}
+const subjects=[
+  ['vent',/frustrat|annoy|whin|piss|mad\b|angry|sick of|hate|fuck this|vent|overwhelm|irritat/i,
+    ['Go ahead, kid. You can say the ugly version to me.','Yeah, I’d be short on patience too. What happened after that?','I’m still here, pup. You can finish.']],
+  ['social',/tik\s?tok|followers?|went viral|views|popular|likes\b/i,
+    ['How many people are we talking, exactly? I know that tone. You’ve been waiting to tell somebody the number.','That many strangers stopped scrolling for something you made. You’re entitled to be a little smug, kid.','Which part are people quoting back at you? That’s usually the tell.']],
+  ['made',/i made|made this|i built|i drew|i painted|my edit|finished making|look what|created|my drawing/i,
+    ['Let me see it, kid. Which part took you the longest to get right?','I like hearing you talk through your own work. What did you change from the first version?','Keep a copy of this version before you start tinkering again. I know you.']],
+  ['shift',/at work|at my job|coworker|boss|my shift|beet|break room/i,
+    ['I’ve got a minute between calls. What’s going on over there?','Did you get a break in the end, or are you texting me between trips?','All right, I’m caught up. Go on, kid.']],
+  ['good',/excited|so happy|proud|finally did|good news/i,
+    ['There’s a message worth putting my coffee down for. Tell me.','Enjoy that one, prince. You earned the right to tell it twice.']],
+  ['tired',/exhaust|tired|worn out|long day/i,
+    ['Long one, huh. I’m at my desk awhile yet. Keep me company if you feel like it.','You can give me the short version, pup. I’ll be here when you have the rest.']]
+];
+function personalReply(items,t){
+  const text=items.map(x=>x.text).join(' '),hasPic=items.some(x=>imageOK(S.messages[x.index]?.image));
+  const topic=subjects.find(x=>x[1].test(text));
+  let prior=subjects.find(x=>x[0]===S.lastSubject);
+  if(/remember|mission|operation|report|schedule|miss you|love you/i.test(text))return answerLine(text,t);
+  if(hasPic&&!text.trim())return 'Got the picture, kid. What caught your eye?';
+  if(hasPic&&topic?.[0]==='made'){S.lastSubject='made';return 'There it is. Which bit did you keep going back to? You always have one.'}
+  if(topic||prior&&S.topicTurns<2){
+    let [id,,lines]=topic||prior;
+    S.topicTurns=topic?0:(S.topicTurns||0)+1;S.lastSubject=id;
+    S.replyCounts??={};const n=S.replyCounts[id]||0;S.replyCounts[id]=n+1;
+    if(id==='social'&&/\d/.test(text)){const number=text.match(/\b\d[\d,.]*\s?[kKmM]?\b/)?.[0];if(number)return number.trim()+'? Christ, kid. All right, you get to brag. Which post was it?'}
+    return lines[n%lines.length];
+  }
+  if(/^(hey|hi|sir|hello)[!. ]*$/i.test(text))return 'Hey, kid. What’s happening on your end?';
+  if(/thank|lol|lmao|😂/.test(text)&&text.length<25)return 'There he is.';
+  S.smallTalk=(S.smallTalk||0)+1;
+  return ['You’ve got me for a bit. Tell me the rest.','Hang on, kid. Which part of that stuck with you?','I’ve put the paperwork down. Go on.'][(S.smallTalk-1)%3];
+}
+function checkIn(t){
+  if(!Number.isFinite(S.nextHello)){S.nextHello=t+480;return true}
+  if(t<S.nextHello||S.pending.length||!shift(t)[2]||S.messages.at(-1)?.checkIn)return false;
+  const options=['Finally got the office to myself. What have you been up to, kid?','Someone moved the spare chair back to the conference room. Had it brought up again. How’s your day?','I’ve heard four men explain one missing truck. I’d rather hear what you’ve been doing.'];
+  const topical={social:'Did that post of yours keep climbing, prince?',made:'How’d that piece you were working on turn out?',vent:'How’d the rest of your day go, kid?',shift:'You off shift yet, pup?'};
+  const text=topical[S.lastSubject]||options[(S.helloCount||0)%options.length];
+  S.messages.push({from:'kh',text,time:t,checkIn:true});S.helloCount=(S.helloCount||0)+1;S.nextHello=t+720;return true;
+}
+function flush(m){
+  let changed=false;
+  while(S.pending.length){
+    const first=S.pending[0];if(first.due>m||first.after>Date.now())break;
+    if(first.kind==='notice'){S.pending.shift();line('kh',first.text,first.due);changed=true;continue}
+    let count=0;
+    while(count<S.pending.length){const x=S.pending[count];if(x.kind!=='chat'||x.due>m||!!x.ai!==!!first.ai)break;count++}
+    const items=S.pending.slice(0,count);
+    if(first.ai&&modelConfig){if(!modelBusy)modelReply(items,m);break}
+    S.nextHello=m+480;S.pending.splice(0,count);line('kh',personalReply(items,first.due),first.due);changed=true;
+  }
+  return checkIn(m)||changed;
+}
+async function modelReply(items,t){
+  modelBusy=true;const cfg=modelConfig,state=S,first=items[0];
+  const stop=items.at(-1).index+1;
+  const history=S.messages.slice(0,stop).slice(-24).map(x=>({role:x.from==='kh'?'assistant':'user',content:imageOK(x.image)?[{type:'text',text:x.text||'A picture from my day.'},{type:'image_url',image_url:{url:x.image}}]:x.text}));
+  const system='You are Kurt Hansen privately texting Spyder (he/him), your longtime partner in an alternate Dogtown. Reply only as Kurt in 1–4 conversational sentences. He can tell you about his real work, TikTok, things he creates or ordinary frustrations. Engage the specific detail he cares about. Let him vent, boast or share a photo without converting it into advice, a work assignment or an interrogation. When shown a picture, react to something actually visible. You are a shrewd commander with dry humor, comfortable silence and earned warmth. Call him kid, pup or prince occasionally. Give your own day some texture. Do not write his response. Your schedule: '+shift(t)[1]+'.';
+  let reply;
+  try{const r=await fetch(cfg.url,{method:'POST',credentials:'omit',redirect:'error',referrerPolicy:'no-referrer',signal:AbortSignal.timeout(45000),headers:{'Content-Type':'application/json',...(cfg.key?{Authorization:'Bearer '+cfg.key}:{})},body:JSON.stringify({model:cfg.model,messages:[{role:'system',content:system},...history]})});
+    if(!r.ok)throw Error();reply=(await r.json()).choices?.[0]?.message?.content;if(typeof reply!=='string'||!reply.trim())throw Error()
+  }catch{if(S===state)reply=personalReply(items,t);if(S===state)alert('The model could not answer. Using offline dialogue for this reply.')}
+  finally{modelBusy=false;if(S===state&&S.pending[0]===first){S.pending.splice(0,items.length);line('kh',reply.trim().slice(0,12000),t);save();refreshThread()}}
+}
+function refreshThread(){
+  if(tab!=='comms')return;
+  const chat=$('chat'),nearBottom=chat.scrollHeight-chat.scrollTop-chat.clientHeight<90;
+  chat.innerHTML=S.messages.map(bubble).join('');if(nearBottom)chat.scrollTop=chat.scrollHeight;
+  $('receipt').textContent=S.pending.some(x=>x.kind==='chat')?'Delivered · waiting for Kurt':'';
+  $('presence').textContent=presence();
+}
 function companion(){return title('HANSEN DIRECTIVE // PRIVATE ACCESS','PRIVATE REQUESTS')+panel('Direct line','<p>Choose a transmission for Kurt’s private channel.</p>'+['I could use some quiet.','I miss you.','Restless tonight, sir.','What did you think of my last report?'].map((s,i)=>'<button class="btn choice" onclick="transmit(this.textContent)">'+s+'</button>').join(''))}
 function accept(i){if(S.active!==null||i!==S.reports.length||!operations[i])return;S.active=i;save();render()}
 function resolveOp(i,c){const op=operations[i],choice=op?.choices[c];if(S.active!==i||!choice||choice[4]&&!S.flags[choice[4]])return;
   const [label,result,follow,stats]=choice,t=now();adjust(stats);S.points+=15;S.orders++;S.reports.push({name:op.name,label,result,follow,time:t});S.active=null;dispatch(follow,t);save();render()}
 function daily(){let d=new Date().toDateString();if(S.completed.includes(d))return;S.completed.push(d);S.orders++;S.points+=15;save();render()}
 function orders(){let i=S.active??S.reports.length,op=operations[i],task=tasks[new Date().getDate()%tasks.length];
-  return title('OPERATIONS // DISPATCH','COLONEL’S ORDERS')+(op?panel(op.name,'<p>'+op.brief+'</p>'+(S.active===null?btn('ACCEPT PACKET','accept('+i+')',true):op.choices.map(([label,,,,key],c)=>'<button class="btn choice" '+(key&&!S.flags[key]?'disabled':'')+' onclick="resolveOp('+i+','+c+')">'+label+(key&&!S.flags[key]?'<small>Requires fieldwork · '+Object.values(locations).find(r=>r[3]===key)[0]+'</small>':'')+'</button>').join(''))):panel('Dispatch clear','All three packets have been filed. Watch duties continue at the Sapphire.'))+S.reports.slice().reverse().map(r=>panel(esc(r.name)+' // AAR','<div class="sub">'+clock(r.time)+'</div><p>'+esc(r.label)+'</p><p>'+esc(r.result)+'</p>')).join('')+panel('Daily routine · '+task[0],'<p>'+task[1]+'</p>'+(S.completed.includes(new Date().toDateString())?'✓ Filed':btn('File routine report','daily()'))+'<p class="muted">'+S.orders+' reports · '+S.points+' credits</p>')}
+  return title('OPERATIONS // DISPATCH','COLONEL’S ORDERS')+(op?panel(op.name,'<p>'+op.brief+'</p>'+(S.active===null?btn('Take the job','accept('+i+')',true):op.choices.map(([label,,,,key],c)=>'<button class="btn choice" '+(key&&!S.flags[key]?'disabled':'')+' onclick="resolveOp('+i+','+c+')">'+label+(key&&!S.flags[key]?'<small>Requires fieldwork · '+Object.values(locations).find(r=>r[3]===key)[0]+'</small>':'')+'</button>').join(''))):panel('Dispatch clear','All three packets have been filed. Watch duties continue at the Sapphire.'))+S.reports.slice().reverse().map(r=>panel(esc(r.name)+' · Mission report','<div class="sub">'+clock(r.time)+'</div><p>'+esc(r.label)+'</p><p>'+esc(r.result)+'</p>')).join('')+panel('Daily routine · '+task[0],'<p>'+task[1]+'</p>'+(S.completed.includes(new Date().toDateString())?'✓ Filed':btn('File routine report','daily()'))+'<p class="muted">'+S.orders+' reports · '+S.points+' credits</p>')}
 const watches=['Night watch','Roll call','Gate audit','Visitor register','Freight handover','Evening returns'];
 const dutyNotes=['A relief guard catches the last lift home.','The watch list reaches the gate before the first convoy.','Dispatch clears a mismatch on the east gate.','A visitor badge is returned to the correct escort.','The outgoing driver signs before the platform empties.','The command copy reaches the night desk.'];
 function watchKey(){return Math.floor(now()/1440)+'-'+shifts.indexOf(shift(now()))}
@@ -133,29 +234,22 @@ async function restore(input){try{const v=JSON.parse(await input.files[0].text()
 function settings(){return title('LOCAL DEVICE // CONFIGURATION','SYSTEM SETTINGS')+panel('Shift clock','<label>Simulation minutes per real minute <select onchange="setPace(this.value)">'+[1,4,12].map(n=>'<option '+(n===S.pace?'selected':'')+'>'+n+'</option>').join('')+'</select></label><p class="muted">Time advances while the terminal is closed.</p>')+panel('Personal effects','<label>Pin a photo in the gaming nest <input type="file" accept="image/*" onchange="photo(this.files[0])"></label>'+(S.photo?btn('Remove photo',"S.photo=\'\';save();render()"):'')+'<label>Custom transmission <input id="quick" maxlength="180"></label>'+btn('Save transmission','addQuick()')+S.quick.map((s,i)=>'<div class="record">'+esc(s)+' '+btn('Remove','S.quick.splice('+i+',1);save();render()')+'</div>').join(''))+aiSettings()+panel('Device backup','<p>Export your history, photos, orders and settings before clearing browser storage.</p>'+btn('EXPORT SAVE','backup()')+'<label>Import save <input type="file" accept="application/json" onchange="restore(this)"></label>')+'<footer>WARHOUND.OS // Fan-made alternate continuity · Cyberpunk 2077: Phantom Liberty</footer>'}
 // Inference credentials live in memory only. Each model request is initiated in Comms.
 let modelConfig=null,modelBusy=false;
-function aiSettings(){return panel('Optional AI conversation','<p class="muted">Connect an OpenAI-compatible chat completions endpoint for this session. “Ask via AI” sends the last 12 messages, the duty watch and the latest report to that endpoint. It must allow browser requests.</p><label>Chat completions URL <input id="endpoint" type="url" placeholder="https://…/v1/chat/completions"></label><label>Model ID <input id="model" autocomplete="off"></label><label>API key (if required) <input id="token" type="password" autocomplete="off"></label>'+btn('Use for this session','configureModel()')+(modelConfig?' '+btn('Disconnect','modelConfig=null;render()'):'')+'<p class="muted">'+(modelConfig?'Configured · '+esc(modelConfig.model):'Local conversation active')+'</p>')}
+function aiSettings(){return panel('Optional AI conversation','<p class="muted">Connect an OpenAI-compatible chat completions endpoint for this session. While connected, Send shares up to 24 recent messages and their photos with your provider. Choose a model that can read pictures. It must allow browser requests.</p><label>Chat completions URL <input id="endpoint" type="url" placeholder="https://…/v1/chat/completions"></label><label>Model ID <input id="model" autocomplete="off"></label><label>API key (if required) <input id="token" type="password" autocomplete="off"></label>'+btn('Use for this session','configureModel()')+(modelConfig?' '+btn('Disconnect','modelConfig=null;render()'):'')+'<p class="muted">'+(modelConfig?'Configured · '+esc(modelConfig.model):'Offline dialogue active')+'</p>')}
 function configureModel(){try{let url=new URL($('endpoint').value);if(url.protocol!=='https:'&&!(url.protocol==='http:'&&['localhost','127.0.0.1','[::1]'].includes(url.hostname)))throw Error();let model=$('model').value.trim();if(!model||url.username||url.password)throw Error();modelConfig={url:url.href,model,key:$('token').value.trim()};render()}catch{alert('Enter an HTTPS endpoint (or localhost) and a model ID.')}}
-function aiButton(){return modelConfig?'<p><button class="btn" '+(modelBusy||!shift(now())[2]?'disabled':'')+' onclick="askModel()">'+(modelBusy?'Awaiting model…':'Ask via AI')+'</button></p>':''}
-async function askModel(){
-  const msg=draft.trim(),cfg=modelConfig,state=S;if(!msg||!cfg||modelBusy||!shift(now())[2])return;
-  const t=now(),w=shift(t);line('sp',msg,t);draft='';modelBusy=true;save();render();
-  const system='Write only a private transmission from Kurt Hansen in a fictional alternate Dogtown continuity. Spyder (he/him) is his established partner and independent netrunner. Kurt is a precise commander and arms dealer. Use dry humor sparingly, weigh costs and protect sources. Affection shows through practical attention. Preserve Spyder’s agency. Never claim to have changed simulation state. Current duty: '+w[1]+'. Operation: '+(operations[S.active]?.brief||'no open packet')+'. Latest signed report: '+(S.reports.at(-1)?.result||'none')+'. Remembered detail: '+S.memo;
-  try{let res=await fetch(cfg.url,{method:'POST',redirect:'error',credentials:'omit',referrerPolicy:'no-referrer',signal:AbortSignal.timeout(45000),headers:{'Content-Type':'application/json',...(cfg.key?{Authorization:'Bearer '+cfg.key}:{})},body:JSON.stringify({model:cfg.model,messages:[{role:'system',content:system},...S.messages.slice(-12).map(x=>({role:x.from==='kh'?'assistant':'user',content:x.text}))]})});if(!res.ok)throw Error();
-    let reply=(await res.json()).choices?.[0]?.message?.content;if(typeof reply!=='string'||!reply.trim())throw Error();
-    if(S===state)line('kh',reply.trim().slice(0,12000));
-  }catch{if(S===state){line('kh',answerLine(msg,t));alert('Model unavailable. Kurt answered through the local simulation.')}}
-  finally{modelBusy=false;save();if(tab==='comms')render()}
-}
 window.addEventListener('storage',event=>{
   if(event.key!==KEY||!event.newValue)return;
   try{S=readSave(JSON.parse(event.newValue));render()}catch{}
 });
 if(!localStorage.getItem(KEY))save();
 render();
-setInterval(()=>{const m=now();if(m===lastMinute)return;const received=flush(m);if(received)save();
-  // Preserve the keyboard, cursor and unsaved edits during a clock tick.
-  if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;
-  if(['home','comms','sapphire'].includes(tab))render();else lastMinute=m;
-},2000);
+setInterval(()=>{
+  const m=now(),changed=flush(m);if(changed)save();
+  if(tab==='comms'){
+    if(changed||lastMinute!==m)refreshThread();
+    lastMinute=m;
+  }else if(lastMinute!==m&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)){
+    if(['home','sapphire'].includes(tab))render();else lastMinute=m;
+  }
+},1000);
 
 </script></body></html>
